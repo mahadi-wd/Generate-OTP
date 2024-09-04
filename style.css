@@ -64,3 +64,18 @@ body{
     font-size: 22px;
 }
 
+.munnaParent{
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.munnaVaiText{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
