@@ -1,0 +1,23 @@
+
+body{
+    background: black;
+    color: white;
+}
+
+.munnaParent{
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+/* .munnaVaiContainer{
+    width: 800px;
+  
+} */
+.munnaVaiText{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+
+}
