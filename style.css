@@ -21,6 +21,7 @@ body{
 }
 .otp-box-list{
     display: flex;
+    
   
 }
 
@@ -31,6 +32,11 @@ body{
     text-align: center;
     font-size: 25px;
     font-weight:700;
+    background: white;
+    color: rgb(189, 25, 25);
+    border: none;
+    border-radius: 50%;
+
 }
 
 .otp-vaildation.success{
@@ -59,23 +65,62 @@ body{
     font-size: 25px;
 }
 .munnaVai{
-    color: chocolate;
+    color: rgb(235, 239, 27);
     font-weight: 600;
     font-size: 22px;
 }
 
-.munnaParent{
-    height: 100vh;
+.munnaParent {
     display: flex;
-   justify-content: center;
-   align-items: center;
-
+    justify-content: center;
+    align-items: center;
+  
 }
 
-.munnaVaiText{
+.munnaVaiContainer {
+    width: 100%; 
+    max-width: 700px; 
+    margin: 10px ; 
+    text-align: center; 
+}
+
+.munnaVaiText {
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
-
 }
 
+
+.munnaVaiImg {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.goBackBtn{
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+   justify-content:center;
+   align-items: center;
+   gap: 3px;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 600px) {
+    .munnaVaiContainer {
+        width: 100%;
+        max-width: 400px; 
+        margin: 10px auto;
+    }
+
+    .munnaVaiText {
+        font-size: 20px; 
+    }
+
+    .munnaVaiImg {
+        width: 100%; 
+    }
+}

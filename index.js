@@ -32,12 +32,12 @@ function expireOTP() {
 }
 
 function tackleInputBoxes(){
- const inputElem = document.getElementById('otp-box-list-id');
+
  const otpBoxes = document.querySelectorAll('.otp-box')
- otpBoxes.forEach((i)=> {
-    i.value=""
- })
- inputElem.addEventListener('input', function(e){
+ otpBoxes.forEach((box)=> {
+    box.value=""
+ 
+ box.addEventListener('input', function(e){
     const target = e.target;
     const inputValue = target.value;
 
@@ -50,10 +50,11 @@ function tackleInputBoxes(){
     if(nextElement){
         nextElement.focus();
     }
+
     otpValidation()
  })
 
- 
+})
 }
 
 
@@ -104,7 +105,7 @@ function otpValidation() {
             },3000)
 
           
-            
+           
         }
         else{
     
@@ -115,7 +116,7 @@ function otpValidation() {
             validete.classList.add('fail')
     
             setTimeout(()=>{
-                expireOTPSpot.innerText = 'Wrong OTP..  New OTP generate after 3 secounds'
+                expireOTPSpot.innerText = 'Wrong OTP. New OTP being regenerate after 3 seconds'
                 clearInterval(intervleId)
                setTimeout(()=> {
                 window.location.reload()
@@ -129,7 +130,9 @@ function otpValidation() {
    
 }
 
-
+function goBackBtn(){
+    window.location.href= "index.html"
+}
 
 function init(){
     console.log("Project has been initialized")
