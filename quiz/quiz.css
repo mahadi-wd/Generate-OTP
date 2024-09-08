@@ -12,9 +12,10 @@ body{
 
 #startQuizContainer{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 10px;
+    margin-top: 0;
    
 }
 
@@ -178,9 +179,14 @@ body{
 @media screen and (max-width: 767px) {
     body {
         height: 100vh;
-        padding: 20px;
-       
+        padding: 0;
+        align-items: start;
+        margin-top: 0;
         
+    }
+
+    #startQuizContainer{
+        margin-top: 100px;
     }
 
     #goBackBtn{

@@ -13,7 +13,7 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-image: url('./quiz/quizImg/360_F_264451711_Gt3INmt26pjbTv7eanciQGHcX0hWKBFR.jpg');
     background-position: center ;
