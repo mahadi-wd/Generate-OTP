@@ -10,6 +10,7 @@ body{
     background-position: center; 
 }
 
+
 #startQuizContainer{
     display: flex;
     justify-content: start;
@@ -66,6 +67,8 @@ body{
     background-position: center; 
     display: none;
 }
+
+
 #question{
     font-size: 20px;
     margin-bottom: 20px;
@@ -224,7 +227,7 @@ body{
 
     #quiz-container {
         width: 90%;
-       height: 90%;
+      
        margin: 10px;
     }
 
@@ -248,12 +251,15 @@ body{
     }
     #countdown{
         text-align: center;
+        
     }
     #timeLeft{
         width: 200px;
         font-size: 17px;
         margin: auto 0;
+        position: absolute;
         bottom: 22px;
-        padding-left: 20px;
+        left: 50%; /* Move it to the middle of the container */
+        transform: translateX(-50%);
     }
 }
