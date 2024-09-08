@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="startQuizContainer">
+        <button onclick="startQuiz()"  id="startQuizBtn" >Start Quiz</button>
+        <button id="goBackBtn" onclick="goBackBtn()">Go back</button>
+    </div>
+    <div id="quiz-container">
+        <div id="quiz">
+            <div id="countdown">
+                <p id="timeLeft"></p>
+                <div id="progressbar"></div>
+            </div>
+            <div id="question"></div>
+            <div class="choices">
+                <button onclick="selectedQuestion(0)" class="choice">choice 1</button>
+                <button onclick="selectedQuestion(1)" class="choice">choice 2</button>
+                <button onclick="selectedQuestion(2)" class="choice">choice 3</button>
+                <button onclick="selectedQuestion(3)" class="choice">choice 4</button>
+            </div>
+
+           <div id="exitAndNextBtnContainer">
+            <button  onclick="nextQuestion()" id="next-question">Next question</button>
+
+            <button onclick="exitBtn()" id="exitQuiz">Exit</button>
+           </div>
+
+            <div id="score-container"></div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

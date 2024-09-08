@@ -13,21 +13,22 @@ function expireOTP() {
 
 
     intervleId = setInterval(() => {
+        
         expireOTPSpot.innerText = ` OTP expire in ${timer} secouds`;
         timer = timer - 1;
     }, intervle)
 
     timeOut = setTimeout(()=> {
-        expireOTPSpot.innerText = 'OTP is expired'
+        
         clearInterval(intervleId)
         
-        setTimeout(()=>{
+        // setTimeout(()=>{
              expireOTPSpot.innerText = 'Generating new OTP after 3 secounds'
            
             setTimeout(()=> {
                 generateOtp()
-            },3000)
-        },0)
+            },2000)
+        // },0)
     },expire)
 }
 
@@ -95,13 +96,13 @@ function otpValidation() {
             validete.classList.add('success')
     
             clearInterval(intervleId);
-            expireOTPSpot.innerText = 'Lets talk with Munna Vai...';
-            expireOTPSpot.classList.add('munnaVai')
+            expireOTPSpot.innerText = 'Lets go to the quiz section.';
+            expireOTPSpot.style.color = 'rgb(235, 71, 241)'
            
           
 
             setTimeout(()=> {
-                  window.location.href = 'munna.html'
+                  window.location.href = './quiz/quiz.html'
             },3000)
 
           
@@ -138,10 +139,7 @@ function init(){
     console.log("Project has been initialized")
     tackleInputBoxes()
     setTimeout(generateOtp , 2000);
-     
-    
-   
-        
+       
 }
 
 
