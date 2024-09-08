@@ -222,16 +222,19 @@ body{
     }
 
     #question {
-        font-size: 16px; /* Smaller font for mobile */
+        font-size: 16px; 
     }
 
     .choice {
         padding: 15px;
-        font-size: 16px; /* Larger buttons for easier tapping */
+        font-size: 16px; 
     }
 
     #next-question {
-        padding: 12px 18px; /* Make buttons larger */
+        padding: 12px 18px; 
+    }
+    #exitQuiz{
+        padding: 12px 18px;
     }
     #progressbar{
         width: auto;

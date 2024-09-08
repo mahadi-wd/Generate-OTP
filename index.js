@@ -22,13 +22,8 @@ function expireOTP() {
         
         clearInterval(intervleId)
         
-        // setTimeout(()=>{
-             expireOTPSpot.innerText = 'Generating new OTP after 3 secounds'
-           
-            setTimeout(()=> {
-                generateOtp()
-            },2000)
-        // },0)
+       generateOtp()
+      
     },expire)
 }
 
@@ -96,14 +91,11 @@ function otpValidation() {
             validete.classList.add('success')
     
             clearInterval(intervleId);
-            expireOTPSpot.innerText = 'Lets go to the quiz section.';
-            expireOTPSpot.style.color = 'rgb(235, 71, 241)'
            
-          
 
-            setTimeout(()=> {
-                  window.location.href = './quiz/quiz.html'
-            },3000)
+            
+            window.location.href = './quiz/quiz.html'
+          
 
           
            
