@@ -89,14 +89,14 @@ function otpValidation() {
             validete.innerText= 'OTP has been Validate successfully.'
             validete.classList.remove('fail')
             validete.classList.add('success')
-    
+            
             clearInterval(intervleId);
            
-
+            
             
             window.location.href = './quiz/quiz.html'
           
-
+            expireOTPSpot.innerText=''
           
            
         }
