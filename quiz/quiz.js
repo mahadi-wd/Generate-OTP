@@ -319,6 +319,9 @@ function playAgainBtn() {
   currentQuestion = 0;
   score = 0;
 
+  let scorContainer = document.getElementById("quiz-container");
+  scorContainer.style.background = ``;
+
   let quizContainer = document.getElementById("quiz-container");
   quizContainer.style.display = "block";
 
